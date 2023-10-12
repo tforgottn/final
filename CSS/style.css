@@ -14,7 +14,7 @@ a {
 }
 
 .inicio-dama {
-    background-image: url("/img/relojes-dama/fondo-dama.webp");
+    background-image: url("../img/relojes-dama/fondo-dama.webp");
 }
 
 .name-logo {
