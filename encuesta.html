@@ -17,11 +17,45 @@
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="./CSS/whatsapp-chat-support.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Google Tag Manager -->
     <!-- Políticas de seguridad -->
 </head>
 
 <body>
+    <!--Boton de whatsapp-->
+    <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+        <div class="wcs_button_label">
+            Contáctanos
+        </div>
+        <div class="wcs_button wcs_button_circle">
+            <span class="bi bi-whatsapp"></span>
+        </div>
+
+        <div class="wcs_popup">
+            <div class="wcs_popup_close">
+                <span class="bi bi-x"></span>
+            </div>
+            <div class="wcs_popup_header">
+                <span class="bi bi-whatsapp"></span>
+                <strong>Servicio al cliente</strong>
+
+                <div class="wcs_popup_header_description">¿Algún problema o comentario? Puedes contactarte con nosotros
+                    via whatsapp</div>
+
+            </div>
+            <div class="wcs_popup_input" data-number="5567698624"
+                data-availability='{ "monday":"07:00-23:59", "tuesday":"07:00-23:59", "wednesday":"07:00-23:59", "thursday":"07:00-23:59", "friday":"07:00-23:59", "saturday":"07:00-23:59", "sunday":"07:00-23:59"}'>
+                <input type="text" placeholder="Escribenos!" />
+                <i class="bi bi-play-fill"></i>
+            </div>
+            <div class="wcs_popup_avatar">
+                <img src="img/logo.ico" alt="Logo Alter Stand">
+            </div>
+        </div>
+    </div>
+    <!--/Boton de whatsapp-->
     <header class="header inicio img-fluid">
         <!--navbar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -73,19 +107,27 @@
             </div>
         </nav>
         <!--/navbar-->
+        <main>
+            <section>
+                <h1>Encuesta</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="Enc">
+                            Nos interesa saber tu opinión sobre nosotros!
+                            Llena el formulario para darnos tus comentarios y saber que te gusta de nosotros!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center py-5">
+                <a href="formulario.html" type="button" class="btn btn-info btn-lg">Inicio</a>
+            </div>
+        </main>
     </header>
     <!-- Main -->
-    <main>
-        <div>class="mensaje"
-            <br>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <H1> Para poder darte una atención perzonalizada por favor de registrarse y un socio afiliado se pondra
-                    en contacto con usted.</H1>
-                <button type="button" class="btn btn-outline-secondary">Login</button>
-                <button type="button" class="btn btn-outline-secondary">Register</button>
-            </div>
-    </main>
-
+    
     <footer class="footer">
         <div class="footer-rights-reserved">
             <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -189,7 +231,7 @@
 
         </div>
     </footer>
-
+    <script src="JS/jquery-3.7.1.min.js"></script>
     <script src="aos/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -198,7 +240,12 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
+    <script src="JS/whatsapp-chat-support.js"></script>
+    <script>
+        $('#button-w').whatsappChatSupport({
+            defaultMsg: '',
+        });
+    </script>
 </body>
 
 </html>
